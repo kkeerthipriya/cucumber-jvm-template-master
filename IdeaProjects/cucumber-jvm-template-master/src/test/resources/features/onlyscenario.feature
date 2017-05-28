@@ -2,9 +2,15 @@
 Feature: Contact customer cate
   User should be able to contact customer care for any assistance on orders
 
-  @basicscen
+  @basicscenario1
   Scenario: Fill the contact customer care details form
     Given  An order placed "421"
+    When I fill the form with the details as "Customer service" and "kkk@gmail.com" and "421" and "order is mine"
+    Then I should be able click on submit button and send message to customer care
+
+  @basicscenio2
+  Scenario: Fill the contact customer care details form
+    Given  An order placed "4214"
     When I fill the form with the details as "Customer service" and "kkk@gmail.com" and "421" and "order is mine"
     Then I should be able click on submit button and send message to customer care
 

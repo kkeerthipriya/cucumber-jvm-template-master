@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "classpath:features/onlyscenario.feature",
 		plugin = {"pretty", "html:target/cucumber-html-report"},
-		tags = "@basicscen"
+		tags = "@basicscenario1"
 		)
 public class RunCukesTest{
 
